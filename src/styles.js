@@ -10,6 +10,10 @@ export const Title = styled.h1`
     color: #ff006c;
     transition: 1s all;
   }
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
 `;
 export const Button = styled.button`
   background-color: #ff009e;
@@ -54,7 +58,7 @@ export const Container = styled.div`
   border-radius: 15px;
 
   @media (max-width: 800px) {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 `;
 
@@ -64,4 +68,8 @@ export const Text = styled.p`
   padding: 0px 15px 0px 15px;
   text-align: center;
   color: #000;
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 `;
