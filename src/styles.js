@@ -52,6 +52,10 @@ export const Container = styled.div`
   padding: 25px 20px 60px 20px;
   background-color: #fff;
   border-radius: 15px;
+
+  @media (max-width: 800px) {
+    margin-top: 15vh;
+  }
 `;
 
 export const Text = styled.p`
