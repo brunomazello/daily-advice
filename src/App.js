@@ -6,10 +6,9 @@ import DailyAdvice from "./components/pages/DailyAdvice";
 
 function App() {
   return (
-    <Background>
-      <Index />
+    <div>
       <DailyAdvice />
-    </Background>
+    </div>
   );
 }
 

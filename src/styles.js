@@ -1,20 +1,29 @@
 import styled, { css } from "styled-components";
 
 export const Title = styled.h1`
-  color: #f00;
-  font-size: 30px;
+  color: #ff009e;
+  font-size: 60px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    color: #ff006c;
+    transition: 1s all;
+  }
 `;
 export const Button = styled.button`
-  background-color: #1db954;
-  padding: 25px 45px;
-  color: #ffffff;
+  background-color: #ff009e;
+  padding: 15px 85px;
+  color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
   &:hover {
-    background-color: #191414;
+    background-color: #ff006c;
     transition: 1s all;
   }
 
@@ -35,13 +44,20 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-`;
-
-export const Background = styled.body`
-  background-color: black;
+  margin-top: 25vh;
+  flex-direction: column;
+  border: 1px solid white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 25px 20px 60px 20px;
+  background-color: #fff;
+  border-radius: 15px;
 `;
 
 export const Text = styled.p`
-  color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+  color: #000;
 `;

@@ -1,16 +1,32 @@
-import { Container, Text } from "../../styles";
+import { Container, Text, Title, Button } from "../../styles";
 import axios from "axios";
+import { useState } from "react";
 
-const url = "http://localhost:5500/api";
-
-const GetAdvice = () => {
-  axios.get(url).then().catch();
-};
+const url = "https://api.adviceslip.com/advice";
 
 const DailyAdvice = () => {
+  const [advice, setAdvice] = useState();
+  const GetAdvice = () => {
+    axios
+      .get(url)
+      .then((response) => {
+        const data = response.data;
+        const tip = data.slip.advice;
+        console.log(data);
+        setAdvice(tip);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  GetAdvice();
+
   return (
     <Container>
-      <Text>Daily</Text>
+      <Title> Your Daily Advice</Title>
+      <Text>{advice}</Text>
+      <Button onClick={GetAdvice}>New Advice</Button>
     </Container>
   );
 };
