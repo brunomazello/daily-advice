@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Title, css, Container } from "../../styles";
+import { Title, css, Background, Container } from "../../styles";
 
 const Index = () => {
   return (

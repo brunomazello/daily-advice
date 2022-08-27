@@ -34,4 +34,14 @@ export const Anchor = styled.a`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 30px;
+`;
+
+export const Background = styled.body`
+  background-color: black;
+`;
+
+export const Text = styled.p`
+  color: #fff;
 `;
