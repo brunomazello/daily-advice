@@ -62,7 +62,7 @@ export const Container = styled.div`
   border-radius: 15px;
 
   @media (max-width: 800px) {
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
 `;
 
