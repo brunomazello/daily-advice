@@ -37,6 +37,10 @@ export const Button = styled.button`
       background: palevioletred;
       color: white;
     `}
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Anchor = styled.a`
